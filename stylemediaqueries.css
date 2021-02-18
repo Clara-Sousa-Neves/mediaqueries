@@ -1,0 +1,186 @@
+body {
+    background-color: pink;
+}
+
+@media screen and (max-width: 992px) {
+    body {
+        background-color: olive;
+        color: white;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-color: gray;
+        color: white;
+    }
+}
+
+.wrapper {
+    overflow: auto;
+}
+
+#main {
+    margin-left: 4px;
+}
+
+#leftsidebar {
+    float: none;
+    width: auto;
+}
+
+#menulist {
+    margin: 0;
+    padding: 0;
+}
+
+.menuitem {
+    background: darkolivegreen;
+    border: 1px solid black;
+    border-radius: 4px;
+    list-style-type: none;
+    margin: 4px;
+    padding: 2px;
+    color: white;
+}
+
+@media screen and (min-width: 650px) {
+    #leftsidebar {
+        width: 200px;
+        float: left;
+    }
+    #main {
+        margin-left: 216px;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* Style the top navigation bar */
+
+.topnav {
+    overflow: hidden;
+    background-color: fuchsia;
+}
+
+
+/* Style the topnav links */
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+/* Change color on hover */
+
+.topnav a:hover {
+    background-color: green;
+    color: black;
+}
+
+
+/* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 600px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* Create four equal columns that floats next to each other */
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 20px;
+    color: black;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+
+@media screen and (max-width: 992px) {
+    .column {
+        width: 50%;
+    }
+}
+
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+div.example {
+    background-color: fuchsia;
+    padding: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    div.example {
+        display: none;
+    }
+}
+
+div.example1 {
+    background-color: lightgrey;
+    padding: 20px;
+}
+
+@media screen and (min-width: 600px) {
+    div.example1 {
+        font-size: 80px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    div.example1 {
+        font-size: 30px;
+    }
+}
+
+
+/*
+
+Typical Device Breakpoints
+  / Extra small devices (phones, 600px and down) /
+@media only screen and (max-width: 600px) {...}
+
+/Small devices (portrait tablets and large phones, 600px and up) /
+@media only screen and (min-width: 600px) {...}
+
+/ Medium devices (landscape tablets, 768px and up) /
+@media only screen and (min-width: 768px) {...}
+
+/ Large devices (laptops/desktops, 992px and up) /
+@media only screen and (min-width: 992px) {...}
+
+/ Extra large devices (large laptops and desktops, 1200px and up) /
+@media only screen and (min-width: 1200px) {...}
+*/
